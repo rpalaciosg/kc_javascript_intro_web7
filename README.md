@@ -2,8 +2,8 @@
 
 Contiene las respuestas de la prática del curso.
 
-# Primera Kata
-## FooBarQuix
+## Primera Kata
+### FooBarQuix
 
 Nos dan un número entre el 1 y 100, y tenemos que devolver por orden lo siguiente:
 
@@ -12,7 +12,7 @@ Nos dan un número entre el 1 y 100, y tenemos que devolver por orden lo siguien
 * Si el número es divisible por 7, añadimos “Quix”.
 * Por cada dígito 3,5 o 7, añadiremos “Foo”, “Bar”, “Quix” respectivamente y en orden de aparición.
 
-### Ejemplos: 
+#### Ejemplos: 
 
 * 1  -> 1
 * 2  -> 2
@@ -33,8 +33,8 @@ Nos dan un número entre el 1 y 100, y tenemos que devolver por orden lo siguien
 * 53 -> BarFoo
 * 75 -> FooBarQuixBar(divisible por 3, divisible por 5, contiene un 7, contiene un 5)
 
-# Segunda Kata
-## Sistema Romano
+## Segunda Kata
+### Sistema Romano
 Vamos a hacer un ejercicio clásico y es jugar con los números romanos y árabes.
 
 Como refresco, vamos a ver sus símbolos y reglas.
@@ -51,7 +51,7 @@ Como refresco, vamos a ver sus símbolos y reglas.
  D | 500 
  M | 1000 
 
-### Reglas
+#### Reglas
 
 Sólo se contemplan números entre el 1 y el 3999
 
@@ -64,19 +64,19 @@ Sólo se contemplan números entre el 1 y el 3999
 * C se resta de D y M
 * Los símbolos V, L y D no pueden colocarse a la izquierda de otro mayor.
 
-### Ejercicios
+#### Ejercicios
 
 1. Crear una función para pasar de número romanos a árabes
 2. Crear una función para pasar de árabes a romanos
 3. Hacer un validador de números romanos
 
-# Tercera Kata
-## Póker
-### Introdución
+## Tercera Kata
+### Póker
+#### Introdución
 
 Una baraja de poker contiene 52 cartas. 
 
-### Cartas
+#### Cartas
 Una carta se compone de dos cosas:
 
 Palo (suit) que pueden ser los siguientes:
@@ -100,7 +100,7 @@ Valor:
 * rey/King (K)
 * as/Ace (A). 
 
-### Mano
+#### Mano
 
 Una mano es un conjunto de 5 cartas, estamos jugando con una baraja, por lo que no puede haber cartas repetidas.
 
@@ -124,7 +124,7 @@ Las manos de poker se ordenan de menor a mayor dependiendo de una serie de regla
 
 * Straight flush (Escalera de Color): 5 cartas de la misma cara pero con valores consecutivos. En caso de tener escalera las dos manos entonces gana el que tenga el valor más alto.
 
-### Ejemplos
+#### Ejemplos
 
 Entrada: Jugador 1: 2H 3D 5S 9C KD Jugador 2: 2C 3H 4S 8C AH
 Salida: Jugador 2 gana, carta más alta:
