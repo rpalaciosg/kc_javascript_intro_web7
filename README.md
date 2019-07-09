@@ -1,5 +1,5 @@
 # Practica del curso Introducción a JavaScript de Keepcoding
-============================================================
+
 Contiene las respuestas de la prática del curso.
 
 # Primera Kata
