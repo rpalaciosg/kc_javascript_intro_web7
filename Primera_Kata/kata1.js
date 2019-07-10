@@ -1,31 +1,35 @@
-/* 
-# Primera Kata
+function FooBarQuix (number) {
 
-##FooBarQuix
-Nos dan un número entre el 1 y 100, y tenemos que devolver por orden lo siguiente:
+    let result = number + ' -> ';
 
-Si el número es divisible por 3, escribiremos “Foo” en lugar del número
-Si el número es divisible por 5, añadimos “Bar”
-Si el número es divisible por 7, añadimos “Quix”.
-Por cada dígito 3,5 o 7, añadiremos “Foo”, “Bar”, “Quix” respectivamente y en orden de aparición.
+    if ( (number % 3) === 0 ) { result += 'Foo'; }  
+    if ( (number % 5) === 0 ) { result += 'Bar'; } 
+    if ( (number % 7) === 0 ) { result += 'Quix'; } 
 
-### Ejemplos:
-1 -> 1
-2 -> 2
-3 -> FooFoo (divisible por 3, contiene 3)
-4 -> 4
-5 -> BarBar (divisible por 5, contains 5)
-6 -> Foo (divisible por 3)
-7 -> QuixQuix (divisible por 7, contiene 7)
-8 -> 8
-9 -> Foo
-10 -> Bar
-13 -> Foo
-15 -> FooBarBar (divisible por 3, divisible por 5, contiene 5)
-21 -> FooQuix
-33 -> FooFooFoo (divisible por 3, contiene 3)
-35 -> 35/3 || 35/5 || 35/7, 3, 5
-51 -> FooBar
-53 -> BarFoo
-75 -> FooBarQuixBar(divisible por 3, divisible por 5, contiene un 7, contiene un 5)
-*/
+    let arrNumber = Array.from(number.toString());
+    arrNumber.forEach(element => {    
+        result +=element ? element.replace(/3/, 'Foo').replace(/5/,'Bar').replace(/7/,'Quix') : ' ';     
+    });      
+    return result;
+} 
+
+console.log(FooBarQuix(1));
+console.log(FooBarQuix(2));
+console.log(FooBarQuix(3));
+console.log(FooBarQuix(4));
+console.log(FooBarQuix(5));
+console.log(FooBarQuix(6));
+console.log(FooBarQuix(7));
+console.log(FooBarQuix(8));
+console.log(FooBarQuix(9));
+console.log(FooBarQuix(10));
+console.log(FooBarQuix(13));
+console.log(FooBarQuix(15));
+console.log(FooBarQuix(21));
+console.log(FooBarQuix(33));
+console.log(FooBarQuix(35));
+console.log(FooBarQuix(51));
+console.log(FooBarQuix(53));
+console.log(FooBarQuix(75));
+console.log(FooBarQuix(98));
+console.log(FooBarQuix(100));
