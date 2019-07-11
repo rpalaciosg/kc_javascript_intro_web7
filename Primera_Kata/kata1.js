@@ -15,6 +15,12 @@ function FooBarQuix (number) {
     return number + ' -> ' + (result === '' ? number : result);
 } 
 
+// Probar todos los números de 1 al 100
+// for (let i = 0; i <=100; i++) {
+//     console.log(FooBarQuix(i));
+// }
+
+//Probar ejemplos dados
 console.log(FooBarQuix(1));
 console.log(FooBarQuix(2));
 console.log(FooBarQuix(3));
