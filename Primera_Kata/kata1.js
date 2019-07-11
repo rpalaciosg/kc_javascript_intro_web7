@@ -1,16 +1,18 @@
 function FooBarQuix (number) {
 
-    let result = number + ' -> ';
+    let result= ''
 
     if ( (number % 3) === 0 ) { result += 'Foo'; }  
     if ( (number % 5) === 0 ) { result += 'Bar'; } 
-    if ( (number % 7) === 0 ) { result += 'Quix'; } 
+    if ( (number % 7) === 0 ) { result += 'Quix'; }      
 
     let arrNumber = Array.from(number.toString());
-    arrNumber.forEach(element => {
-        result +=element ? element.replace(/3/, 'Foo').replace(/5/,'Bar').replace(/7/,'Quix') : ' ';     
-    });      
-    return result;
+    arrNumber.forEach(element => {                
+        result += element==3 || element==5 || element==7 
+                    ? element.replace(/3/, 'Foo').replace(/5/,'Bar').replace(/7/,'Quix') 
+                    : '';   
+    });          
+    return number + ' -> ' + (result === '' ? number : result);
 } 
 
 console.log(FooBarQuix(1));
