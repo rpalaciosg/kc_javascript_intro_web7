@@ -7,7 +7,7 @@ function FooBarQuix (number) {
     if ( (number % 7) === 0 ) { result += 'Quix'; } 
 
     let arrNumber = Array.from(number.toString());
-    arrNumber.forEach(element => {    
+    arrNumber.forEach(element => {
         result +=element ? element.replace(/3/, 'Foo').replace(/5/,'Bar').replace(/7/,'Quix') : ' ';     
     });      
     return result;
