@@ -1,3 +1,4 @@
+"use strict"
 function FooBarQuix (number) {
 
     let result= ''
@@ -6,8 +7,7 @@ function FooBarQuix (number) {
     if ( (number % 5) === 0 ) { result += 'Bar'; } 
     if ( (number % 7) === 0 ) { result += 'Quix'; }      
 
-    let arrNumber = Array.from(number.toString());
-    arrNumber.forEach(element => {                
+    number.toString().split('').forEach(element => {                
         result += element==3 || element==5 || element==7 
                     ? element.replace(/3/, 'Foo').replace(/5/,'Bar').replace(/7/,'Quix') 
                     : '';   
