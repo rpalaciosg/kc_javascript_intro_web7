@@ -1,9 +1,11 @@
-import { FooBarQuix } from "./Primera_Kata/kata1.mjs";
+import { FooBarQuix } from './Primera_Kata/kata1.mjs';
+import { romanoToArabe } from './Segunda_Kata/kata2.mjs';
 
 // Pruebas kata 1
-console.log('===============================================');
-console.log('=              Resultados Kata 1              =');
-console.log('===============================================');
+console.log(`
+=============================================================
+=                     Resultados Kata 1                     =
+=============================================================`);
 console.log(FooBarQuix(1));
 console.log(FooBarQuix(2));
 console.log(FooBarQuix(3));
@@ -24,3 +26,18 @@ console.log(FooBarQuix(53));
 console.log(FooBarQuix(75));
 console.log(FooBarQuix(98));
 console.log(FooBarQuix(100));
+
+// Pruebas kata 2
+console.log(`
+=============================================================
+=                     Resultados Kata 2                     =
+=============================================================`);
+console.log(`
+--------------------------------------------
+-           Kata 2 - Ejercicio 1           -
+--------------------------------------------`);
+console.log(romanoToArabe('XVRI'));
+console.log(romanoToArabe('XCV'));
+console.log(romanoToArabe('XLV'));
+console.log(romanoToArabe('IX'));
+console.log(romanoToArabe('XXX'));
