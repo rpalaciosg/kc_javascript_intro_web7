@@ -46,6 +46,7 @@ console.log(`
 --------------------------------------------
 -           Kata 2 - Ejercicio 1           -
 --------------------------------------------`);
+console.log(arabesToRomanos(1986));
 console.log(arabesToRomanos(3323));
 console.log(arabesToRomanos(1323));
 console.log(arabesToRomanos(323));
