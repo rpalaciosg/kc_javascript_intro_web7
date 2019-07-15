@@ -1,5 +1,5 @@
 import { FooBarQuix } from './Primera_Kata/kata1.mjs';
-import { romanoToArabe } from './Segunda_Kata/kata2.mjs';
+import { romanoToArabe, arabesToRomanos } from './Segunda_Kata/kata2.mjs';
 
 // Pruebas kata 1
 console.log(`
@@ -41,3 +41,12 @@ console.log(romanoToArabe('XCV'));
 console.log(romanoToArabe('XLV'));
 console.log(romanoToArabe('IX'));
 console.log(romanoToArabe('XXX'));
+
+console.log(`
+--------------------------------------------
+-           Kata 2 - Ejercicio 1           -
+--------------------------------------------`);
+console.log(arabesToRomanos(3323));
+console.log(arabesToRomanos(1323));
+console.log(arabesToRomanos(323));
+console.log(arabesToRomanos(33));
